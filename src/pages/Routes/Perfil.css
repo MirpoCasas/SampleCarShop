@@ -1,0 +1,89 @@
+.Perfil {
+ padding: 75px 50px;
+}
+
+.PerfilPart{
+ margin-top: 50px;
+}
+
+.ContenedorTop {
+ height: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.SellerName{
+ font-size: 44px;
+}
+
+.Perfil h2{
+ font-size: 36px;
+}
+
+.Publicaciones {
+ padding: 20px 0px;
+}
+
+.Publicaciones-Grid{
+ display: flex;
+ gap: 20px;
+ margin-top: 25px;
+ overflow-x: scroll;
+}
+
+.Publicaciones-Item{
+ width: 250px;
+ background-color: grey;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.Publicaciones-Item-Img{
+ width: 75%;
+ height: 50%;
+ object-fit: cover;
+}
+
+.Publicaciones-Item-Desc-Tags{
+ display: flex;
+ gap: 10px;
+ justify-content: space-around;
+ font-size: 12px;
+}
+
+.Publicaciones-Item-Desc-Tag{
+ background-color: wheat;
+ padding: 5px 10px;
+ border-radius: 25px;
+}
+
+.ItemBtn{
+ width: 75%;
+ height: 30px;
+}
+
+.ReseCont{
+ margin-top: 25px;
+}
+
+.Rese-Item{
+ display: flex;
+}
+
+.Rese-Item-Pic{
+ width: 100px;
+ height: 150px;
+ display: flex;
+ justify-content: end;
+ padding: 15px;
+}
+.Rese-Item-Pic img{
+ height: 50px;
+}
+
+.Rese-Item-Desc{
+ width: 400px;
+}

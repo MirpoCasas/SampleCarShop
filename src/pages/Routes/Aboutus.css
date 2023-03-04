@@ -1,0 +1,103 @@
+.about-us {
+    padding: 130px 100px 30px 100px;
+
+}
+
+.head-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sub-title {
+    padding: 50px;
+
+}
+
+.description {
+    padding: 10px;
+    margin: 30px 30px 60px 30px;
+}
+
+.description-text {
+    text-align: justify;
+    line-height: 25px;
+}
+
+.advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.icon:hover {
+    fill: #3C9DFA;
+}
+
+.spanClass {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.contact {
+    flex: 1;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.form-contact {
+    width: 80%;
+}
+
+.Classinput {
+    margin-top: 5px;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+}
+
+.form-button {
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: lightseagreen;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+}
+
+.contact-map {
+    flex: 1;
+}
+
+.itemSVG{
+    height: 150px;
+    width: 150px;
+}

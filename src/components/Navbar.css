@@ -1,0 +1,37 @@
+nav{
+  height: 75px;
+  width: 100%;
+  background-color: #3A9EFD;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.HomeLink{
+  text-decoration: none;
+}
+
+.HomeLink:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar-Name{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navLink-Header{
+  color: black;
+  font-size: 20px;
+}
+
+#searchBar{
+  width: 580px;
+  border-radius: 250px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 25px;
+}

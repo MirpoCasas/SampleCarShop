@@ -1,0 +1,29 @@
+footer{
+  height: 400px;
+  background-color: #3A9EFD;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Footer-Brand{
+  font-size: 26px;
+  height: 300px;
+  margin-left: 90px;
+}
+
+.FooterSection{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 300px;
+}
+
+.FooterSection h3{
+  font-size: 36px;
+}
+
+.FooterSection a{
+  font-size: 20px;
+}
