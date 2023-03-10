@@ -1,120 +1,176 @@
-.Search{
- padding-top: 75px;
- display: flex;
-
+.Search {
+  padding-top: 75px;
+  display: flex;
 }
 
-.FilterBar{
- width: 15%;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 20px;
- padding: 40px 0px;
- box-sizing: border-box;
- border: solid 1px black;
+.FilterBar {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  border: solid 1px black;
 }
 
-.FilterCont{
-width: 90%;
-border: solid 1px black;
-box-sizing: border-box;
+.FilterForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
 }
 
-.FilterCont-Title{
- background-color: antiquewhite;
- width: 100%;
-}
-.FilterCont-Title p{
- box-sizing: border-box;
- width: inherit;
- height: inherit;
- padding: 5px 10px;
+.FilterCont {
+  width: 90%;
+  border: solid 1px black;
+  box-sizing: border-box;
 }
 
-.FilterCont-Filters{
- overflow: hidden;
- height: 0px;
- transition: all 1s;
+.FilterCont-Title {
+  display: flex;
+  background-color: antiquewhite;
+  width: 100%;
+  justify-content: space-between;
+}
+.FilterName {
+  box-sizing: border-box;
+  width: 80%;
+  padding: 5px 10px;
 }
 
-.filterLabel{
- display: flex;
+.FilterCont-FiltersCont {
+  overflow: hidden;
+  height: 0px;
+  transition: all 1s;
+  display: flex;
+  flex-direction: column;
 }
 
-.ResultsHud{
- width: 85%;
- display: flex;
- flex-direction: column;
- align-items: center;
+.FilterCont-Filters ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
 }
 
-.ResultsBar{
- width: 90%;
- background-color: #ffaa00;
- margin: 15px 0px;
- padding: 20px;
- border-radius: 25px;
- display: flex;
- justify-content: space-between;
+.FilterName {
+  align-self: baseline;
 }
 
-.Results{
- width: 95%;
- display: flex;
- padding: 20px;
- box-sizing: border-box;
- gap: 15px;
- flex-wrap: wrap;
- min-height: 980px;
+.applyFilterBtn {
+  align-self: end;
+  padding: 5px 15px;
 }
 
-.Results-Card{
- width: 350px;
- height: 457px;
- background-color: aliceblue;
- border: 2px solid black;
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- border-radius: 20px;
+.filterLabel {
+  display: flex;
 }
 
-.Results-Card-Pic{
- height: 50%;
- width: 90%;
- background-color: aquamarine;
- background-size: cover;
+.ResultsHud {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Results-Card-Desc{
- width: 90%;
- display: flex;
- flex-direction: column;
- gap: 5px;
+.ResultsBar {
+  width: 90%;
+  background-color: #ffaa00;
+  margin: 15px 0px;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.Results-Card-Tag-Cont{
- display: flex;
- gap: 15px;
+.Results {
+  width: 95%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 15px;
+  flex-wrap: wrap;
+  min-height: 980px;
+  justify-content: space-between;
+}
+.loaderCard {
+  background-color: rgba(128, 128, 128, 0.719);
+  width: 354px;
+  height: 457px;
 }
 
-.Results-Card-Tag{
- background-color: aquamarine;
- padding: 5px 10px;
- border-radius: 20px;
+.gradient {
+  flex-grow: 1;
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #cccccc 8%, #f4f4f4 58%, #cccccc 94%);
+  background-size: 1000px 640px;
+  position: relative;
 }
 
-.Results-Card-Button{
- width: 70%;
- height: 30px;
- align-self: center;
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
 }
 
-.Results-More{
- width: 40%;
- height: 80px;
- margin: 20px ;
- font-size: 38px;
+.Results-Card {
+  width: 354px;
+  height: 457px;
+  background-color: aliceblue;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  flex-grow: 1;
+}
+
+.Results-Card-Pic {
+  height: 50%;
+  width: 90%;
+  background-color: aquamarine;
+  background-size: cover;
+}
+
+.Results-Card-Desc {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Results-Card-Tag-Cont {
+  display: flex;
+  gap: 15px;
+}
+
+.Results-Card-Tag {
+  background-color: aquamarine;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.Results-Card-Button {
+  width: 70%;
+  height: 30px;
+  align-self: center;
+}
+
+.Results-More {
+  width: 40%;
+  height: 80px;
+  margin: 20px;
+  font-size: 38px;
 }

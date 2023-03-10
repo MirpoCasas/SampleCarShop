@@ -7,6 +7,7 @@
   background-color: #f7a400;
   color: white;
   border: none;
+  margin: 3px;
 }
 
 .btn:hover {
@@ -19,7 +20,7 @@
 }
 
 .btn:focus {
-  border: solid 5px white;
+  outline: solid 2px rgb(209, 209, 209);
 }
 
 .Head {
@@ -156,10 +157,6 @@
   background-position: center;
 }
 
-.SecondSection-Background.active {
-  width: 150%;
-  height: 150%;
-}
 
 #FirstModal {
   background-color: #1a1b4b;
